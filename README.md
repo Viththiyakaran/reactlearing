@@ -6,6 +6,11 @@ The focus is on **hands-on learning**, clear examples, and small mini projects.
 
 ---
 
+## 🌐 Live Demo
+
+Check out the live React app deployed on Vercel:  
+[React Learning Live Demo](https://reactlearning-puce.vercel.app/)
+
 ## 🚀 What You Will Learn
 
 - JSX syntax
@@ -64,6 +69,5 @@ react-learning/
 Viththiyakaran
 React learner | Aspiring Frontend Developer
 ---
-
 
 ```
