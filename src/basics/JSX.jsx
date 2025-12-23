@@ -1,15 +1,32 @@
-//Nullish Coalescing
-const username = "RRR";
-
+let message;
+const isLogin = false;
 const JSX = () => {
+  if (isLogin) {
+    message = "Welcome user";
+  } else {
+    message = "Sorry Try again!";
+  }
   return (
     <div>
-      <h1>{username ?? "Guest"}</h1>
+      <h1>{message} </h1>
     </div>
   );
 };
 
 export default JSX;
+
+//Nullish Coalescing
+// const username = "RRR";
+
+// const JSX = () => {
+//   return (
+//     <div>
+//       <h1>{username ?? "Guest"}</h1>
+//     </div>
+//   );
+// };
+
+// export default JSX;
 
 //Logical OR
 // const username = "";
