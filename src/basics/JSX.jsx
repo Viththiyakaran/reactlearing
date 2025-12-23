@@ -1,19 +1,35 @@
 let message;
-const isLogin = false;
+const isLogin = true;
 const JSX = () => {
   if (isLogin) {
-    message = "Welcome user";
-  } else {
-    message = "Sorry Try again!";
+    return (message = "Welcome user");
   }
   return (
     <div>
-      <h1>{message} </h1>
+      <h1>Try agian </h1>
     </div>
   );
 };
 
 export default JSX;
+
+//IF condtion
+// let message;
+// const isLogin = false;
+// const JSX = () => {
+//   if (isLogin) {
+//     message = "Welcome user";
+//   } else {
+//     message = "Sorry Try again!";
+//   }
+//   return (
+//     <div>
+//       <h1>{message} </h1>
+//     </div>
+//   );
+// };
+
+// export default JSX;
 
 //Nullish Coalescing
 // const username = "RRR";
