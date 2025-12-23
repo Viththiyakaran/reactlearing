@@ -1,17 +1,36 @@
-let message;
-const isLogin = true;
+//Swtich
+const Admin = () => <p>Admin Dashboard</p>;
+const User = () => <p>User Dashboard</p>;
+const Guest = () => <p>Guest Dashboard</p>;
+
 const JSX = () => {
-  if (isLogin) {
-    return (message = "Welcome user");
-  }
-  return (
-    <div>
-      <h1>Try agian </h1>
-    </div>
-  );
+  const role = "admin";
+
+  const dasboard = {
+    admin: <Admin />,
+    user: <User />,
+    guest: <Guest />,
+  };
+  return <>{dasboard[role]}</>;
 };
 
 export default JSX;
+
+//Early one if
+// let message;
+// const isLogin = true;
+// const JSX = () => {
+//   if (isLogin) {
+//     return (message = "Welcome user");
+//   }
+//   return (
+//     <div>
+//       <h1>Try agian </h1>
+//     </div>
+//   );
+// };
+
+// export default JSX;
 
 //IF condtion
 // let message;
