@@ -1,15 +1,28 @@
-//Logical OR
-const username = "";
+//Nullish Coalescing
+const username = "RRR";
 
 const JSX = () => {
   return (
     <div>
-      <h1>Username : {username || "Guest"}</h1>
+      <h1>{username ?? "Guest"}</h1>
     </div>
   );
 };
 
 export default JSX;
+
+//Logical OR
+// const username = "";
+
+// const JSX = () => {
+//   return (
+//     <div>
+//       <h1>Username : {username || "Guest"}</h1>
+//     </div>
+//   );
+// };
+
+// export default JSX;
 
 //Ternary
 // const isLogin = false;
