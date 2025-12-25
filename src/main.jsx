@@ -7,7 +7,7 @@ import Conditional from "./rendering/Conditional.jsx";
 import Loading from "./rendering/Loading.jsx";
 import LoadingLangepage from "./practice/LoadingLandpage.jsx";
 import LoginPractice from "./practice/LoginPractice.jsx";
-
+import TodoApp from "./practice/TodoAppPractice.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <App /> */}
@@ -16,6 +16,8 @@ createRoot(document.getElementById("root")).render(
     {/* <Conditional /> */}
     {/* <Loading /> */}
     {/* <LoadingLangepage /> */}
-    <LoginPractice />
+    {/* <LoginPractice /> */}
+
+    <TodoApp />
   </StrictMode>
 );
