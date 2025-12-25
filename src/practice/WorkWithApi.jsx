@@ -31,6 +31,14 @@ const WorkWithApi = () => {
   const currentUsers = users.slice(indexOfFirstUser, indexOfLastUser);
   const totalPages = Math.ceil(users.length / usersPerPage);
 
+  // Filter users by search term
+  const filteredUsers = currentUsers.filter((user) => {
+    const fullName = `${user.name.first} ${user.name.last}`.toLowerCase();
+    const country = user.location.country.toLowerCase();
+    const term = searchTerm.toLowerCase();
+    return fullName.includes(term) || country.includes(term);
+  });
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-50 p-6">
       {/* Header */}
@@ -44,12 +52,24 @@ const WorkWithApi = () => {
         </button>
       </div>
 
+      <div className="max-w-6xl mx-auto mb-6 flex justify-center">
+        <input
+          type="text"
+          placeholder="Search by name or country..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full max-w-md px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600"
+        />
+      </div>
+
       {/* Content */}
       {loading ? (
         <p className="text-center text-gray-500 text-lg">Loading users...</p>
+      ) : filteredUsers.length === 0 ? (
+        <p className="text-center text-gray-500">No users found</p>
       ) : (
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {currentUsers.map((user, index) => (
+          {filteredUsers.map((user, index) => (
             <div
               key={index}
               className="bg-white p-5 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
