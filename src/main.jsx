@@ -8,6 +8,7 @@ import Loading from "./rendering/Loading.jsx";
 import LoadingLangepage from "./practice/LoadingLandpage.jsx";
 import LoginPractice from "./practice/LoginPractice.jsx";
 import TodoApp from "./practice/TodoAppPractice.jsx";
+import WorkWithApi from "./practice/WorkWithApi.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <App /> */}
@@ -18,6 +19,8 @@ createRoot(document.getElementById("root")).render(
     {/* <LoadingLangepage /> */}
     {/* <LoginPractice /> */}
 
-    <TodoApp />
+    {/* <TodoApp /> */}
+
+    <WorkWithApi />
   </StrictMode>
 );
