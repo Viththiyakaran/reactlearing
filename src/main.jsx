@@ -9,9 +9,11 @@ import LoadingLangepage from "./practice/LoadingLandpage.jsx";
 import LoginPractice from "./practice/LoginPractice.jsx";
 import TodoApp from "./practice/TodoAppPractice.jsx";
 import WorkWithApi from "./practice/WorkWithApi.jsx";
+import { BrowserRouter } from "react-router-dom";
+
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    {/* <App /> */}
+  <BrowserRouter>
+    <App />
 
     {/* <JSX /> */}
     {/* <Conditional /> */}
@@ -21,6 +23,6 @@ createRoot(document.getElementById("root")).render(
 
     {/* <TodoApp /> */}
 
-    <WorkWithApi />
-  </StrictMode>
+    {/* <WorkWithApi /> */}
+  </BrowserRouter>
 );
