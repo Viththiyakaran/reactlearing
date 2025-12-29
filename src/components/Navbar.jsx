@@ -41,6 +41,17 @@ function Navbar() {
           >
             WorkWithAPI
           </NavLink>
+
+          <NavLink
+            to="/Axios"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-400 font-semibold"
+                : "text-gray-300 hover:text-white"
+            }
+          >
+            Axios Practice
+          </NavLink>
         </div>
       </div>
     </nav>

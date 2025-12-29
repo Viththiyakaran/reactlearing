@@ -54,6 +54,7 @@ import Navbar from "./components/Navbar.jsx";
 import LandingPage from "./practice/LoadingLandpage.jsx";
 import TodoApp from "./practice/TodoAppPractice.jsx";
 import WorkWithAPI from "./practice/WorkWithApi.jsx";
+import AxiosPractice from "./practice/AxiosPractice.jsx";
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/TodoApp" element={<TodoApp />} />
         <Route path="/WorkWithAPI" element={<WorkWithAPI />} />
+        <Route path="/Axios" element={<AxiosPractice />} />
       </Routes>
     </>
   );
