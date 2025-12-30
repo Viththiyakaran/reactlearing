@@ -6,6 +6,7 @@ const MENU_ITEMS = [
   { name: "TodoApp", path: "/TodoApp" },
   { name: "WorkWithAPI", path: "/WorkWithAPI" },
   { name: "Axios Practice", path: "/Axios" },
+  { name: "Contact", path: "/Contact" },
 ];
 
 function Navbar() {
