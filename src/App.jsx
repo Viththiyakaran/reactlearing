@@ -55,6 +55,7 @@ import LandingPage from "./practice/LoadingLandpage.jsx";
 import TodoApp from "./practice/TodoAppPractice.jsx";
 import WorkWithAPI from "./practice/WorkWithApi.jsx";
 import AxiosPractice from "./practice/AxiosPractice.jsx";
+import ContactForm from "./practice/ContactForm.jsx";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
         <Route path="/TodoApp" element={<TodoApp />} />
         <Route path="/WorkWithAPI" element={<WorkWithAPI />} />
         <Route path="/Axios" element={<AxiosPractice />} />
+        <Route path="/Contact" element={<ContactForm />} />
       </Routes>
     </>
   );
